@@ -3,21 +3,24 @@
 <head>
   <title>Counter App</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
+    body 
+    {
+     font-family: Arial, sans-serif;
+    text-align: center;
     }
-   .counter {
-      font-size: 48px;
-      font-weight: bold;
-      margin-bottom: 20px;
+   .counter
+    {
+    font-size: 49px;
+    font-weight: bold;
+    margin-bottom: 20px;
     }
-   .button {
-      width: 40px;
-      height: 40px;
-      font-size: 24px;
-      border: none;
-      border-radius: 50%;
+   .button
+    {
+     width: 40px;
+    height: 40px;
+    font-size: 24px;
+     border: none;
+     border-radius: 50%;
       cursor: pointer;
     }
    .button:hover {
@@ -26,32 +29,29 @@
   </style>
 </head>
 <body>
-  <h1 class="counter" id="counter">0</h1>
+  <h1 class="counter" id="counter">0
+  </h1>
   <button class="button" id="increment">+</button>
   <button class="button" id="decrement">-</button>
   <button class="button" id="reset">Reset</button>
-
-  <script>
-    let count = 0;
-
+ <script>
+    let count = 9;
     const counterElem = document.getElementById('counter');
     const incrementElem = document.getElementById('increment');
     const decrementElem = document.getElementById('decrement');
     const resetElem = document.getElementById('reset');
-
-    function updateDisplay() {
+   function updateDisplay() {
       counterElem.textContent = count;
     }
-
     updateDisplay();
 
     incrementElem.addEventListener('click', () => {
-      count += 1;
+      count += 5;
       updateDisplay();
     });
 
     decrementElem.addEventListener('click', () => {
-      count -= 1;
+      count -= 3;
       updateDisplay();
     });
 
@@ -59,6 +59,6 @@
       count = 0;
       updateDisplay();
     });
-  </script>
+ </script>
 </body>
 </html>
